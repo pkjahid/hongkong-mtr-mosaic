@@ -412,20 +412,19 @@ input:checked + .toggle-slider:before {
 
 /* Style for the custom button */
 #custom-button {
-    background-color: #707070;
-    color: white;
+    background-color: #f0f0f0;
 }
 
 #custom-button.active {
-    background-color: #333333;
+    background-color: #dddddd;
 }
 
 #custom-button:hover {
-    background-color: #333333;
+    background-color: #dddddd;
 }
 
 #custom-button.active:hover {
-    background-color: #222222;
+    background-color: #cccccc;
 }
 
 /* Style for name input fields */

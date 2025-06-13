@@ -80,16 +80,6 @@
     "framerateValue": 1
   },
   {
-    "name": "單色",
-    "nameEn": "Monochrome",
-    "baseColor": "#707070",
-    "gapColor": "#111111",
-    "randomValue": 6,
-    "gridSizeValue": 20,
-    "durationValue": 4,
-    "framerateValue": 1
-  },
-  {
     "name": "彩虹",
     "nameEn": "Rainbow",
     "baseColor": "#333333",
