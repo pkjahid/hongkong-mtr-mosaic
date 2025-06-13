@@ -1,0 +1,112 @@
+[
+  {
+    "name": "油麻地",
+    "nameEn": "Yau Ma Tei",
+    "baseColor": "#D4C3B1",
+    "gapColor": "#eeeeee",
+    "randomValue": 4,
+    "gridSizeValue": 20,
+    "durationValue": 2,
+    "framerateValue": 1
+  },
+  {
+    "name": "中環",
+    "nameEn": "Central",
+    "baseColor": "#561E17",
+    "gapColor": "#111111",
+    "randomValue": 5,
+    "gridSizeValue": 20,
+    "durationValue": 2,
+    "framerateValue": 1
+  },
+  {
+    "name": "石硤尾",
+    "nameEn": "Shek Kip Mei",
+    "baseColor": "#64993C",
+    "gapColor": "#8db073",
+    "randomValue": 5,
+    "gridSizeValue": 20,
+    "durationValue": 2,
+    "framerateValue": 1
+  },
+  {
+    "name": "藍田",
+    "nameEn": "Lam Tin",
+    "baseColor": "#3689AC",
+    "gapColor": "#1d4a5d",
+    "randomValue": 5,
+    "gridSizeValue": 20,
+    "durationValue": 2,
+    "framerateValue": 1
+  },
+  {
+    "name": "尖沙咀",
+    "nameEn": "Tsim Sha Tsui",
+    "baseColor": "#D5BA2B",
+    "gapColor": "#42390a",
+    "randomValue": 1,
+    "gridSizeValue": 20,
+    "durationValue": 1,
+    "framerateValue": 4
+  },
+  {
+    "name": "黄大仙",
+    "nameEn": "Wong Tai Sin",
+    "baseColor": "#967236",
+    "gapColor": "#333333",
+    "randomValue": 5,
+    "gridSizeValue": 20,
+    "durationValue": 1,
+    "framerateValue": 1
+  },
+  {
+    "name": "鑽石山",
+    "nameEn": "Diamond Hill",
+    "baseColor": "#241704",
+    "gapColor": "#30201c",
+    "randomValue": 1,
+    "gridSizeValue": 20,
+    "durationValue": 1,
+    "framerateValue": 1
+  },
+  {
+    "name": "太子",
+    "nameEn": "Prince Edward",
+    "baseColor": "#422736",
+    "gapColor": "#2a1822",
+    "randomValue": 1,
+    "gridSizeValue": 20,
+    "durationValue": 1,
+    "framerateValue": 1
+  },
+  {
+    "name": "單色",
+    "nameEn": "Monochrome",
+    "baseColor": "#707070",
+    "gapColor": "#111111",
+    "randomValue": 6,
+    "gridSizeValue": 20,
+    "durationValue": 4,
+    "framerateValue": 1
+  },
+  {
+    "name": "彩虹",
+    "nameEn": "Rainbow",
+    "baseColor": "#333333",
+    "gapColor": "#000000",
+    "randomValue": 3,
+    "gridSizeValue": 20,
+    "durationValue": 1,
+    "framerateValue": 1,
+    "isRainbow": true,
+    "rainbowColors": [
+      "#EE2200",
+      "#EE7F00",
+      "#EEEE00",
+      "#229922",
+      "#2222EE",
+      "#4B2282",
+      "#8B00EE"
+    ]
+  }
+]
