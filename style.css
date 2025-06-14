@@ -19,7 +19,9 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 10px; /* Add horizontal padding */
+    width: 100%;
+    max-width: 1200px; /* Max width instead of fixed */
 }
 
 .controls {
@@ -57,8 +59,10 @@ body {
 
 .grid-container-wrapper {
     position: relative;
-    width: 1200px;
-    height: 800px;
+    width: 100%; /* Make responsive instead of fixed 1200px */
+    max-width: 1200px; 
+    height: auto; /* Auto height */
+    aspect-ratio: 3/2; /* Maintain aspect ratio */
     margin-top: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
@@ -455,4 +459,166 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 992px) {
+    .container {
+        padding: 30px 10px;
+    }
+    
+    .controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .preset-name-zh {
+        font-size: 90px;
+    }
+    
+    .preset-name-en {
+        font-size: 45px;
+    }
+    
+    .slider-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
+    
+    .grid-container-wrapper {
+        aspect-ratio: 4/3; /* Adjusted aspect ratio for tablets */
+    }
+    
+    .preset-name-zh {
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+    
+    .preset-name-en {
+        font-size: 35px;
+    }
+    
+    .animation-combined-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .control-btn {
+        width: 100%;
+        padding: 12px 16px; /* Larger touch target */
+    }
+    
+    .preset-button {
+        padding: 10px 15px; /* Larger touch target */
+    }
+    
+    .slider-control label {
+        width: 90px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .preset-name-zh {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    
+    .preset-name-en {
+        font-size: 25px;
+    }
+    
+    .grid-container-wrapper {
+        aspect-ratio: 1/1; /* Square for phones */
+    }
+    
+    .preset-buttons-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .preset-button-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    
+    .preset-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 8px;
+        margin-bottom: 5px;
+    }
+    
+    #custom-button {
+        margin-top: 10px;
+    }
+    
+    .slider-control {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .slider-control label {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .slider-control input[type="range"] {
+        width: 100%;
+    }
+    
+    .slider-control span {
+        align-self: flex-end;
+    }
+    
+    /* Larger color pickers for touch */
+    #color-picker,
+    #gap-color-picker {
+        height: 50px;
+        width: 70px;
+    }
+    
+    /* Make toggle switch more touch-friendly */
+    .toggle-switch {
+        width: 60px;
+        height: 30px;
+    }
+    
+    .toggle-slider:before {
+        height: 22px;
+        width: 22px;
+    }
+    
+    input:checked + .toggle-slider:before {
+        transform: translateX(30px);
+    }
+    
+    /* Adjust name input fields */
+    .name-input-control input[type="text"] {
+        padding: 10px;
+        font-size: 16px; /* Prevent auto-zoom on iOS */
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 360px) {
+    .preset-name-zh {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    
+    .preset-name-en {
+        font-size: 20px;
+    }
+    
+    .preset-button-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
